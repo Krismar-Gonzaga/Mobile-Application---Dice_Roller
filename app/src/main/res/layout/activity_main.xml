@@ -3,23 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/background"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/diceImage"
-        android:layout_width="138dp"
-        android:layout_height="146dp"
+    <RelativeLayout
+        android:id="@+id/dice1background"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="250dp"
-        android:layout_marginLeft="120dp"
-        app:srcCompat="@drawable/dice1" />
+        android:layout_marginLeft="20dp">
+        <ImageView
+            android:id="@+id/diceImage"
+            android:layout_width="138dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="7dp"
+            app:srcCompat="@drawable/dice1" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/dice2background"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="200dp">
+        <ImageView
+            android:id="@+id/diceImage2"
+            android:layout_width="138dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="7dp"
+            app:srcCompat="@drawable/dice1" />
+
+    </RelativeLayout>
+
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dice Roller"
         android:layout_marginTop="100dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="90dp"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -31,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="550dp"
-        android:layout_marginLeft="150dp"
+        android:layout_marginLeft="140dp"
         android:clickable="true"
         android:text="Roll" />
 
@@ -40,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="500dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginLeft="115dp"
         android:text="Please top the Button."
         />
 
